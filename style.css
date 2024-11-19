@@ -1,8 +1,54 @@
 .body{
-    background-color: rgb(159, 122, 145);
+    background-color: rgb(102, 84, 95);
     text-align: center;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
+}
+h1{
+
+    text-shadow: 3px 3px 1px lightgrey;
+  
+}
+#bagicon{
+    width: 100px;
+    display: flex;
+    cursor: pointer;
+    border: 2px solid blue;
+    
+}
+
+#addObject{
+    display: flex;
+    align-items:baseline;
+    flex-direction: row;
+    border: 3px solid black;
+
+}
+img{
+    width: 50px;
+    cursor: pointer;
+    border: 2px solid blue;
+}
+.inventory{
+    border: 5px solid black;
+    margin-left: 30px;
+    
+    
+}
+
+#inventoryList{
+
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+.quantity{
+    border: 2px dotted black;
+    opacity: 0%;
 }

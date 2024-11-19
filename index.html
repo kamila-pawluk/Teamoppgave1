@@ -7,22 +7,57 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div id="header">
     <h1>liste over alle objekter</h1>
-    <span>objekt </span><button>legg til en</button><button>fjern en</button>
+   
+
+    <div id="addObject">
+    <ul>
+        <div id="object" onclick="addObject(this)">Object 1</div>
+        <img id="object1" onclick="addObject(this)" src="https://cdn-icons-png.flaticon.com/512/776/776588.png" alt="">
+         <span>object name test </span>
+         <img id="object2" onclick="addObject(this)" src="https://cdn-icons-png.flaticon.com/512/3884/3884851.png" alt="Sverd">
+         <span>Sverd</span>
+         <img id="object3" onclick="addObject(this)" src="https://cdn.prod.website-files.com/655741af3f04e006606d26ad/664c88ea63d17fc3d4925734_Frame%201698755912%20(5)-min.png" alt="">
+         <span>object name test </span>
+         <img id="object4" onclick="addObject(this)" src="https://wow.zamimg.com/images/wow/icons/large/spell_nature_polymorph_cow.jpg" alt="">
+         <span>object name test </span>
+    </ul>
+   
+    </div>
     <!-- kan feks bruke https://www.wowhead.com/icons for ikoner -->
+    </div>
     <br>
     <br>
     <br>
-    <button>vis inventory</button>
-    <!-- kan legge til en knapp med skjul inventory -->
+    <div id="inventoryDiv">
+    <button onclick="showInventory()">vis inventory</button>
+    <br>
+    <button onclick="hideInventory()">skjul inventory</button>
+    <img id="bagicon" onclick="bag()" scr="https://wow.zamimg.com/images/wow/icons/large/inv_misc_bag_08.jpg" alt="">
+    </div>
+<br>
+<div id="containerWithQuantity" class="quantity">
+<span id="quantityInInventory"></span></div>
+<br>
+    <div id="inventoryContainer" class="inventory">
     <p>her er inventory</p>
-    <ol>
-        objekt: antall objekter
+    <ol id="inventoryList">
+        ikon, objekt: antall objekter
+        
+        <button onclick="addObject1()">+</button>
+        <button onclick="removeObject1()">-</button>
+        <div id="testtest"></div>
     </ol>
     <!-- antall av et objekt kan ikke være under null -->
+    <!-- hvis antall av et objekt er null ikke vis på listen -->
+    </div>
 
+    
 
-
+    <script src="script.js"></script>
+</body>
+</html>
 
 
 
