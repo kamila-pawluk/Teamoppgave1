@@ -7,24 +7,18 @@
     flex-direction: column;
 }
 h1{
-
-    text-shadow: 3px 3px 1px lightgrey;
-  
+    text-shadow: 3px 3px 1px lightgrey; 
 }
-#bagicon{
-    width: 100px;
-    display: flex;
-    cursor: pointer;
-    border: 2px solid blue;
-    
-}
-
 #addObject{
     display: flex;
-    align-items:baseline;
     flex-direction: row;
-    border: 3px solid black;
-
+    align-items: center;
+    justify-content: center;
+    border: 3px double black;
+}
+span{
+    position: relative;
+    bottom: 25px;
 }
 img{
     width: 50px;
@@ -33,22 +27,40 @@ img{
 }
 .inventory{
     border: 5px solid black;
-    margin-left: 30px;
-    
-    
+    margin-left: 30px;    
 }
-
 #inventoryList{
-
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-
 }
 .quantity{
     border: 2px dotted black;
     opacity: 0%;
+}
+.object{
+    width: 30px;
+    height: 30px;
+    border: px solid black;
+}
+#item1div{
+    padding: 0px;
+    margin:0px;
+    align-items: left;
+    border-style: solid;
+    cursor: pointer;
+    width: 200px;
+    border-style: solid;
+    border-color: rgb(70, 115, 115);
+    place-self: right;
+    text-align: left;
+    font-size: 16px;
+    color: black;
+}
+#inventoryImgs{
+    width: 20px;
+    border: 1px;
 }
