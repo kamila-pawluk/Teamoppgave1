@@ -8,7 +8,7 @@ function addObject(element){
     if(!box.contains(element)) {
         box.innerHTML += element.outerHTML;
     } else {
-        box.innerHTML == counter; 
+        box.innerHTML += counter; 
     }
     counter++;
    }
