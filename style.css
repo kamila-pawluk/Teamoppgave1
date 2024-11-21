@@ -31,16 +31,15 @@ img{
 }
 #inventoryList{
     display: flex;
-    gap: 10px;
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
-.quantity{
+/* .quantity{
     border: 2px dotted black;
-    opacity: 0%;
-}
+} */
 .object{
     width: 30px;
     height: 30px;
@@ -63,4 +62,9 @@ img{
 #inventoryImgs{
     width: 20px;
     border: 1px;
+}
+.hidden{
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
